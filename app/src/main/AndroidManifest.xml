@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.drk_odenwaldkreis.qrscanner_test">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/start_launcher"
+        android:label="START:QR"
+        android:roundIcon="@mipmap/start_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FormActivity" />
+        <activity android:name=".RDInputActivity" />
+        <activity android:name=".Success_NoConn_After_First" />
+        <activity android:name=".FWInputActivity" />
+        <activity android:name=".SonstInputActivity" />
+        <activity android:name=".IPActivity"></activity>
+    </application>
+
+</manifest>
